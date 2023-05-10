@@ -1,22 +1,19 @@
 <html>
 <head>
 <title>ciBlog</title>
-<!-- /Applications/XAMPP/xamppfiles/htdocs/ciblog/application/views/templates/bootstrap.min.css -->
-<!-- application/assets/css/style.css -->
-<link href="<?php echo base_url(); ?>views/templates/bootstrap.min.css" rel="stylesheet" type="text/css" >
-<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css">
+<link href="<?php echo base_url(); ?>bootstrap.min.css" rel="stylesheet" type="text/css" >
 </head>
 <body>
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand" href="/">ciBlog</a>
+            <a class="navbar-brand" href="<?php echo base_url(); ?>">CiBlog</a>
         </div>
-        <div id="navbar">
-            <ul class="nav navbar-nav">
-                <li><a href="<?php echo base_url(); ?>">Home</a></li>
-                <li><a href="<?php echo base_url(); ?>about">About</a></li>
-                <li><a href="<?php echo base_url(); ?>posts">Blog</a></li>
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav me-auto">
+                <li><a class="nav-link" href="<?php echo base_url(); ?>">Home</a></li>
+                <li><a class="nav-link" href="<?php echo base_url(); ?>about">About</a></li>
+                <li><a class="nav-link" href="<?php echo base_url(); ?>posts">Blog</a></li>
             </ul>
         </div>
     </div>
